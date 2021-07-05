@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leica</title>
+    
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link href="css/pc.css" rel="stylesheet" type="text/css">
+    <link href="css/tab.css" rel="stylesheet" type="text/css">
+    <link href="css/mobile.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/move.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header start! -->
+        <header>
+            <div class="in_header">
+                <div id="logo"></div>
+                <ul id="menu_wrap">
+                    <li class="main_menu"><a href="#">LEICA CAMERA KOREA</a></li>
+                    <li class="main_menu"><a href="#">AKADEMIE</a></li>
+                    <li class="main_menu"><a href="#">CONTENTS</a></li>
+                    <li class="main_menu"><a href="#">STORE/SERVICE CENTER</a></li>
+                    <li class="main_menu"><a href="#">CUSTOMER CARE</a></li>
+                </ul>
+
+                <!-- hidden_menu -->
+                <div class="hidden_menu_wrap">
+                <button type="button" id="ham_btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </button>
+                <div class="hidden_menu">
+                    <ul id="main_menu">
+                        <li><a href="#">LEICA CAMERA KOREA</a></li>
+                        <li><a href="#">AKADEMIE</a></li>
+                        <li><a href="#">CONTENTS</a></li>
+                        <li><a href="#">STORE/SERVICE CENTER</a></li>
+                        <li><a href="#">CUSTOMER CARE</a></li>
+                    </ul>
+                    <ul id="other_menu">
+                        <li><a href="#">CARRER</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="fullpage">
+
+            <!-- sec1 start! -->
+            <section class="section fp-auto-height-responsive" id="sec1">
+                <div class="swiper-container" id="pc_sec1">
+                <div class="swiper-wrapper" id="slide_wrap">
+                    <div class="swiper-slide" ><img data-src="img/slide1.jpg" alt="q2"/></div>
+                    <div class="swiper-slide" ><img data-src="img/slide2.jpg" alt="눈으로보는심포니"/></div>
+                    <div class="swiper-slide" ><img data-src="img/slide3.jpg" alt="라이카액세사리"/></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper("#pc_sec1", {
+                        loop: true,
+                        centeredSlides: true,
+                        allowTouchMove : false,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            dynamicBullets: true,
+                            position:'absolute',
+                            bottom: 20,
+                        },
+                    });
+                </script>
+
+                <div class="swiper-container" id="m_sec1">
+                    <div class="swiper-wrapper" id="slide_wrap">
+                        <div class="swiper-slide" ><img src="img/m_slide1.jpg" alt="q2"/></div>
+                        <div class="swiper-slide" ><img src="img/m_slide2.jpg" alt="눈으로보는심포니"/></div>
+                        <div class="swiper-slide" ><img src="img/m_slide3.jpg" alt="라이카액세사리"/></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <script>
+                    var swiper = new Swiper("#m_sec1", {
+                        loop: true,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            dynamicBullets: true,
+                            position:'absolute',
+                            bottom: 20,
+                        },
+                    });
+                </script>
+            </section>
+            <script>
+                var swiper = new Swiper("#pc_sec1", {
+                    loop: true,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        dynamicBullets: true,
+                        position:'absolute',
+                        bottom: 20,
+                    },
+                });
+            </script>
+
+            <!-- sec2 start! -->
+            <section class="section fp-auto-height-responsive" id="sec2">
+                <div id="video_wrap">
+                <video loop muted autoplay playsinline data-autoplay class="video_bg">
+                    <source data-src="video/leica-sl-system-the-fundamental-choice-wo.gl.mp4" type="video/mp4">
+                </video>
+                <div id="video_txt">
+                    <h2>LEICA STORY</h2>
+                    <p>When a Dream Comes True</p>
+                </div>
+                
+                </div>
+            </section>
+
+            <!-- sec3 start! -->
+            <section class="section fp-auto-height-responsive" id="sec3">
+                
+                <div class="container">
+                    
+                    <div class="sec3_txt_box">
+                        <div id="line"></div>
+                        <h2>PRODUCT HIGHLIGHTS</h2>
+                    </div>
+
+                    <div class="bottom_wrap" id="pc_sec3">
+                        <div class="img_wrap">
+                            <span>Leica SL2</span>
+                            <p>오직 촬영에만<br/> 집중하다
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_sl2.png" alt="sl2"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <span>Leica CL</span>
+                            <p>꿈은 크게,<br/> 짐은 가볍게
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_CL.png" alt="CL"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <span>Leica Q2</span>
+                            <p>한치의 오타도 없는<br/> 완벽함
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/q2.png" alt="Q2"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap">
+                            <span>Leica M10-R</span>
+                            <p>4천만 화소의 신제품,<br/> 이미지 품질 재정의
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_m10r.png" alt="M10R"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab_sec3">
+                    <div class="bottom_wrap swiper-container" id="tab_swiper" >
+                        <div class="swiper-wrapper">
+                        <div class="img_wrap swiper-slide">
+                            <span>Leica SL2</span>
+                            <p>오직 촬영에만<br/> 집중하다
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_sl2.png" alt="sl2"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap swiper-slide">
+                            <span>Leica CL</span>
+                            <p>꿈은 크게,<br/> 짐은 가볍게
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_CL.png" alt="CL"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap swiper-slide">
+                            <span>Leica Q2</span>
+                            <p>한치의 오타도 없는<br/> 완벽함
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/q2.png" alt="Q2"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap swiper-slide">
+                            <span>Leica M10-R</span>
+                            <p>4천만 화소의 신제품,<br/> 이미지 품질 재정의
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_m10r.png" alt="M10R"/>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="arrow_wrap">
+                        <div class="swiper-button-next">
+                            <img src="img/arr_red.png" alt="arrow_right"/>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="img/arr_red_left.png" alt="arrow_left"/>
+                        </div>
+                    </div>    
+                    </div>
+
+                    <script>
+                        var swiper = new Swiper("#tab_swiper", {
+                            slidesPerView: 2,
+                            spaceBetween: 50,
+                            loop: true,
+                            autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                            },
+                            navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+
+                    <div id="m_sec3">
+                    <div class="bottom_wrap swiper-container" id="m_swiper">
+                        <div class="swiper-wrapper">
+                        <div class="img_wrap swiper-slide" id="m_box">
+                            <span>Leica SL2</span>
+                            <p>오직 촬영에만<br/> 집중하다
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_sl2.png" alt="sl2"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap swiper-slide" id="m_box">
+                            <span>Leica CL</span>
+                            <p>꿈은 크게,<br/> 짐은 가볍게
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_CL.png" alt="CL"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap swiper-slide" id="m_box">
+                            <span>Leica Q2</span>
+                            <p>한치의 오타도 없는<br/> 완벽함
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/q2.png" alt="Q2"/>
+                            </div>
+                        </div>
+                        <div class="img_wrap swiper-slide" id="m_box">
+                            <span>Leica M10-R</span>
+                            <p>4천만 화소의 신제품,<br/> 이미지 품질 재정의
+                                <button><img data-src="img/arr_red.png" alt=""/></button>
+                            </p>
+                            <div class="img_box">
+                                <img data-src="img/sec3_m10r.png" alt="M10R"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="arrow_wrap">
+                            <div class="swiper-button-next">
+                                <img src="img/arr_red.png" alt="arrow_right"/>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img src="img/arr_red_left.png" alt="arrow_left"/>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    </div>
+                    
+                    <script>
+                        var swiper = new Swiper("#m_swiper", {
+                            slidesPerView: 1,
+                            loop: true,
+                            autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                            },
+                            navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+
+                </div>
+                
+            </section>
+
+            <!-- sec4 start! -->
+            <section class="section fp-auto-height-responsive" id="sec4">
+                <div id="sec4_bg"></div>
+                <div class="container">
+                    <h2>LEICA EXHIBITION</h2>
+                    <div id="sec4_sub_txt">우리가 모르는 도시 <span>Unknown City</span></div>
+                    <div class="bottom_wrap" id="sec4_con">
+                    
+                        <div class="sec4_img_box" id="box1">
+                            <p>전시일시 : 2021.04.15 ~ 2021.05.12</p>
+                        </div>
+                        <div class="sec4_img_box" id="box2">
+                            <p>전시장소 : 라이카 스토어 신세계 본점</p>
+                        </div>
+                        <div class="sec4_img_box" id="box3">
+                            <p>작가 한영수</p>
+                        </div>
+                    </div>
+
+                    <div class="bottom_wrap" id="m_sec4_con">
+                    
+                        <div class="sec4_img_box">
+                            <div class="m_sec4_txt_wrap">
+                                <p>전시일시 : 2021.04.15 ~ 2021.05.12</p>
+                                <p>전시장소 : 라이카 스토어 신세계 본점</p>
+                                <p>작가 한영수</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- sec5 start! -->
+            <section class="section fp-auto-height-responsive" id="sec5">
+                <div id="txt_box">
+                    <h1>라이카 회원가입과 제품 등록을 통해<br/>
+                    여러 혜택을 만나보세요.
+                    <button></button>
+                    </h1>
+                </div>
+            </section>
+
+            <!-- footer start! -->
+            <footer class="section fp-auto-height fp-auto-height-responsive">
+                <div class="container">
+                    <div class="top_footer" id="pc_top_footer">
+                        <ul class="foot_info">
+                            <li>라이카 카메라 코리아(주) 대표자 : 수닐카울</li>
+                            <li>전화번호 : 1661-0405</li>
+                            <li>서울시 강남구 테헤란로 208 안제타워 2층</li>
+                            <li>사업자 등록번호 :211-88-55103</li>
+                        </ul>
+                        <ul class="foot_info">LEGAL
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                        <ul class="foot_info">CUSTOMER CARE
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">배송 및 교환정책</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                        <ul class="foot_info">CUSTOMER CARE
+                            <li><a href="#">제품등록</a></li>
+                            <li><a href="#">다운로드</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                        <ul class="foot_info" id="sns_wrap">
+                            <li><a href="#">
+                                <svg id="facebook"></svg>
+                                Facebook</a>
+                            </li>
+                            <li><a href="#">
+                                <svg id="insta"></svg>
+                                Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top_footer" id="m_top_footer">
+                        <div class="footer_info">
+                        <ul class="foot_info">
+                            <li>라이카 카메라 코리아(주) 대표자 : 수닐카울</li>
+                            <li>전화번호 : 1661-0405</li>
+                            <li>서울시 강남구 테헤란로 208 안제타워 2층</li>
+                            <li>사업자 등록번호 :211-88-55103</li>
+                        </ul>
+                        <ul class="foot_info" id="sns_wrap">
+                            <li><a href="#">
+                                <svg id="facebook"></svg>
+                                Facebook</a>
+                            </li>
+                            <li><a href="#">
+                                <svg id="insta"></svg>
+                                Instagram</a>
+                            </li>
+                        </ul>
+                        </div>
+
+                        <div class="footer_menu">
+                            <ul class="foot_info">LEGAL
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                            </ul>
+                        <ul class="foot_info">CUSTOMER CARE
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="#">배송 및 교환정책</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                        <ul class="foot_info">CUSTOMER CARE
+                            <li><a href="#">제품등록</a></li>
+                            <li><a href="#">다운로드</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="bottom_footer">
+                        <span>Copyright © 2020 Leica Camera Korea Ltd.</span>
+                        <div id="f_logo">
+                            <img data-src="img/logo.png" alt="logo"/>
+                            <p>DAS WESENTLICHE</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+
+        <div id="to_top">TOP</div>
+
+
+
+    </div>
+
+</body>
+</html>
